@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #a5dce6;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 2px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #8ec0ca;
+            font-weight: bold;
+        }
+        th:first-child {
+            border-top-left-radius: 15px;
+        }
+        th:last-child {
+            border-top-right-radius: 15px;
+        }
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 15px;
+        }
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 15px;
+        }
+        .shapes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .shapes div {
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 2px solid #7fbc41;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+        }
+        .shapes .oval {
+            width: 100px;
+            height: 50px;
+            border-radius: 50px / 25px;
+        }
+    </style>
+    <title>Table and Shapes Example</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+
+<div class="shapes">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="oval"></div>
+    <div></div>
+    <div></div>
+</div>
+
+</body>
+</html>
